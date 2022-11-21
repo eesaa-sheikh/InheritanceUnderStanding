@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StudentFlatTest {
-    private StudentFlatTest studentFlat;
+    private StudentFlat studentFlat;
 
     @BeforeEach
 
@@ -26,7 +26,7 @@ public class StudentFlatTest {
                 // Arrange
                 String expected = "Aston University";
                 // Acting
-                String actual = StudentFlatTest.getNameOfProperty();
+                String actual = studentFlat.getNameOfProperty();
                 //Assert
                 assertEquals(expected, actual);
 
@@ -40,7 +40,7 @@ public class StudentFlatTest {
             public void numberofComplaints() {
                 int expected = 169;
 
-                int actual = StudentFlat.getNumberOfComplaints();
+                int actual = studentFlat.getNumberOfComplaints();
 
                 assertEquals(expected, actual);
             }
@@ -51,9 +51,12 @@ public class StudentFlatTest {
             public void numberofParties() {
                 int expected = 10;
 
-                int actual = StudentFlat.getNumberOfParties();
+                int actual = studentFlat.getNumberOfParties();
 
                 assertEquals(expected, actual);
             }
+
+
         };
     }
+}
