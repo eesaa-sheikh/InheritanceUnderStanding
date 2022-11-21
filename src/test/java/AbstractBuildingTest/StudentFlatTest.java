@@ -13,7 +13,7 @@ public class StudentFlatTest {
     public void setUp() {
 
 
-        studentFlat = new StudentFlat("Aston University",
+        studentFlat = new AbstractBuilding.StudentFlat("Aston University",
                 20, 05.2007, 169,
                 10, false) {
 
@@ -55,8 +55,17 @@ public class StudentFlatTest {
 
                 assertEquals(expected, actual);
             }
+            //Does Mansion have library
+            @Test
+            public void isApartmentCleaned(){
+                boolean expected = false;
 
+                boolean actual = studentFlat.isProperlyCleanedAfterSemester();
 
+                assertEquals(expected,actual);
+            }
+
+            ;
         };
     }
 }

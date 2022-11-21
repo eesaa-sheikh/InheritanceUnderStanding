@@ -33,7 +33,6 @@ StudentFlat newStudentFlat= new AbstractBuilding.StudentFlat("Aston University",
 
 TownEnclosure.addProperty(newMansion);
 TownEnclosure.addProperty(newStudentFlat);
-
     int expected = 2;
     int actual = TownEnclosure.countProperty();
 

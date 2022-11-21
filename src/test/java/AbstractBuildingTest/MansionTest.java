@@ -53,5 +53,23 @@ public class MansionTest {
 
         assertEquals(expected,actual);
     }
+    //Does mansion have a SwimmingPool
+    @Test
+    public void numberOfSwimmingPool(){
+        int expected = 10;
 
+        int actual = mansion.getSwimmingPool();
+
+        assertEquals(expected,actual);
+    }
+
+    //Does Mansion have library
+    @Test
+    public void doesMansionHaveLibrary(){
+        boolean expected = true;
+
+        boolean actual = mansion.isDoesItHaveALibrary();
+
+        assertEquals(expected,actual);
+    }
 }
