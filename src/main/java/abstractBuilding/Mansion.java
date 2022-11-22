@@ -1,6 +1,8 @@
 package abstractBuilding;
 
-public class Mansion extends AbstractBuilding {
+import interfaces.IMansion;
+
+public class Mansion extends AbstractBuilding implements IMansion {
 
     private int swimmingPool;
     public int numberOfSportsCars;
@@ -9,22 +11,25 @@ public class Mansion extends AbstractBuilding {
 
     //Constructor
 
-    public Mansion (String nameOfProperty,
+    public Mansion(String nameOfProperty, double price,
                    int numberOfRooms, Double dateOfConstruction,
                    boolean doesItHaveALibrary,
                    int swimmingPool,
                    int numberOfSportsCars,
-                   int numberOfChefs){
+                   int numberOfChefs) {
 
 
-        super(nameOfProperty,dateOfConstruction,numberOfRooms );
+        super(nameOfProperty, dateOfConstruction, numberOfRooms,price);
 
         //references for this Mansion Class alone
         this.doesItHaveALibrary = doesItHaveALibrary;
-        this.swimmingPool =swimmingPool;
+        this.swimmingPool = swimmingPool;
         this.numberOfSportsCars = numberOfSportsCars;
         this.numberOfChefs = numberOfChefs;
     }
+
+
+
 
     //setters nad Getters
 
@@ -59,5 +64,21 @@ public class Mansion extends AbstractBuilding {
 
     public void setNumberOfChefs(int numberOfChefs) {
         this.numberOfChefs = numberOfChefs;
+    }
+
+    public String mansionSize(int squareFeet) {
+        return this.nameOfProperty + squareFeet + "Square Feet";
+    }
+
+
+    //Overload section for household CEO
+
+
+    public String makeHouseHoldOccuption(){
+
+        return String.format("%s: has a CEO",this.nameOfProperty);
+
+
+
     }
 }

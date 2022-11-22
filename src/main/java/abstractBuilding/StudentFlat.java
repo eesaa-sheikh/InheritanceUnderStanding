@@ -9,6 +9,7 @@ public class StudentFlat extends AbstractBuilding {
     public StudentFlat(
             //////////////////////////////////////////////////// Constructor from the parent class
             String nameOfProperty,
+            double price,
             int numberOfRooms,
             Double dateOfConstruction,
             /////////////////////////////////////////////////// new class values shown below
@@ -16,7 +17,7 @@ public class StudentFlat extends AbstractBuilding {
             int numberOfParties,
             boolean properlyCleanedAfterSemester) {
         //Super Properties needs the parent class constructor included in.
-        super(nameOfProperty, dateOfConstruction, numberOfRooms);
+        super(nameOfProperty, dateOfConstruction, numberOfRooms,price);
 
 
         this.numberOfComplaints = numberOfComplaints;
@@ -49,6 +50,12 @@ public class StudentFlat extends AbstractBuilding {
     //boolean to see if the flat is properly cleaned
     public boolean isProperlyCleanedAfterSemester() {
         return properlyCleanedAfterSemester == true;
+    }
+
+
+    @Override
+    public String makeHouseHoldOccuption(){
+        return "Students";
     }
 }
 

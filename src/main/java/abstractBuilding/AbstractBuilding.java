@@ -7,15 +7,34 @@ public abstract class AbstractBuilding {
     protected Double dateOfConstruction;
 
     protected int numberOfRooms;
+    protected double price;
 
+    //  protected double price;
 
-    public AbstractBuilding (String nameOfProperty, Double dateOfConstruction, int numberOfRooms){ // reference all this in the super class
+    public AbstractBuilding(String nameOfProperty, Double dateOfConstruction, int numberOfRooms, double price) { // reference all this in the super class
         // in the constructor.
 
-        this.nameOfProperty=nameOfProperty;
-        this.dateOfConstruction= dateOfConstruction;
-        this.numberOfRooms=numberOfRooms;
+        this.nameOfProperty = nameOfProperty;
+        this.dateOfConstruction = dateOfConstruction;
+        this.numberOfRooms = numberOfRooms;
+        this.price = price;
+        //  this.price =price;
     }
+
+    //Testing method
+
+    public String makeHouseHoldOccuption() {
+
+        return String.format("%s: has a CEO",this.nameOfProperty);
+    }
+
+
+    //Overload method
+    public String makeHouseHoldOccuption(String occupation) {
+        return String.format("my household is a %s, and my occupation is %s ",
+                this.nameOfProperty, makeHouseHoldOccuption());
+    }
+
     //Setters & Getters
 
     // Name of property
@@ -47,4 +66,24 @@ public abstract class AbstractBuilding {
     public void setNumberOfRooms(int numberOfRooms) {
         this.numberOfRooms = numberOfRooms;
     }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    //    public double getPrice() {
+//        return price;
+//    }
+//
+//    public void setPrice(double price) {
+//        this.price = price
+//    }
+
+
+    //abstract method for costs of inflation
+
+
 }

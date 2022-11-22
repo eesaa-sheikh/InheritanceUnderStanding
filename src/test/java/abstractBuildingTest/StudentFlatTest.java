@@ -14,57 +14,68 @@ public class StudentFlatTest {
 
 
         studentFlat = new abstractBuilding.StudentFlat("Aston University",
-                20, 05.2007, 169,
-                10, false);
+                8_000, 20, 05.2007,
+                169, 10,true);
 
     }
 
 
-            @Test
+    @Test
 
-            //Testing Name
+    //Testing Name
 
-            public void testingPropertyNameValue() {
-                // Arrange
-                String expected = "Aston University";
-                // Acting
-                String actual = studentFlat.getNameOfProperty();
-                //Assert
-                assertEquals(expected, actual);
+    public void testingPropertyNameValue() {
+        // Arrange
+        String expected = "Aston University";
+        // Acting
+        String actual = studentFlat.getNameOfProperty();
+        //Assert
+        assertEquals(expected, actual);
 
 
-                //   assertEquals(actual).isEqualTo(expected);
-            }
+        //   assertEquals(actual).isEqualTo(expected);
+    }
 
-            @Test
+    @Test
 
-            //Testing Number Of complaints
-            public void numberofComplaints() {
-                int expected = 169;
+    //Testing Number Of complaints
+    public void numberofComplaints() {
+        int expected = 169;
 
-                int actual = studentFlat.getNumberOfComplaints();
+        int actual = studentFlat.getNumberOfComplaints();
 
-                assertEquals(expected, actual);
-            }
+        assertEquals(expected, actual);
+    }
 
-            @Test
+    @Test
 
-            //Testing Number Of parties
-            public void numberofParties() {
-                int expected = 10;
+    //Testing Number Of parties
+    public void numberofParties() {
+        int expected = 10;
 
-                int actual = studentFlat.getNumberOfParties();
+        int actual = studentFlat.getNumberOfParties();
 
-                assertEquals(expected, actual);
-            }
-            //is the Aparment Cleaned after the semester
-            @Test
-            public void isApartmentCleaned(){
-                boolean expected = false;
+        assertEquals(expected, actual);
+    }
 
-                boolean actual = studentFlat.isProperlyCleanedAfterSemester();
+    //is the Aparment Cleaned after the semester
+    @Test
+    public void isApartmentCleaned() {
+        boolean expected = false;
 
-                assertEquals(expected,actual);
-            }
+        boolean actual = studentFlat.isProperlyCleanedAfterSemester();
 
-        }
+        assertEquals(expected, actual);
+    }
+@Test
+    public void studentOccupation() {
+        // Arrange
+        String expected = "Students";
+        // Acting
+        //this is an Overload
+        String actual = studentFlat.makeHouseHoldOccuption();
+        //Assert
+        assertEquals(expected, actual);
+
+    }
+}
