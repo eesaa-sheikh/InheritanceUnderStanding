@@ -57,6 +57,13 @@ public class StudentFlat extends AbstractBuilding {
     public String makeHouseHoldOccuption(){
         return "Students";
     }
+
+    @Override
+    public Double inflationCost() {
+        double earlyCostOfStudentFlat = 2_000;
+        this.price = (((this.price - earlyCostOfStudentFlat)/earlyCostOfStudentFlat) * 100)/12;
+        return this.price;
+    }
 }
 
 

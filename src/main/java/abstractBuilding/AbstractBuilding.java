@@ -85,5 +85,7 @@ public abstract class AbstractBuilding {
 
     //abstract method for costs of inflation
 
+    public abstract Double inflationCost();
+
 
 }

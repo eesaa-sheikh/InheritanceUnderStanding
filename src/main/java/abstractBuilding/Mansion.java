@@ -66,8 +66,8 @@ public class Mansion extends AbstractBuilding implements IMansion {
         this.numberOfChefs = numberOfChefs;
     }
 
-    public String mansionSize(int squareFeet) {
-        return this.nameOfProperty + squareFeet + "Square Feet";
+    public Integer mansionSize(int squareFeet) {
+        return squareFeet;
     }
 
 
@@ -81,4 +81,12 @@ public class Mansion extends AbstractBuilding implements IMansion {
 
 
     }
+
+    @Override
+    public Double inflationCost() {
+        double earlyCostOfMansion = 5_000_000;
+        this.price = (this.price - earlyCostOfMansion)/earlyCostOfMansion * 100;
+        return this.price;
+    }
+
 }

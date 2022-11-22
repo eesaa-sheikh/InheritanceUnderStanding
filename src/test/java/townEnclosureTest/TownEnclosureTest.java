@@ -29,27 +29,27 @@ public class TownEnclosureTest {
     //Testing to see if both subClasses
     public void canAddPropertyMansionandStudentFlat() {
 Mansion newMansion= new abstractBuilding.Mansion("Shaquille O' Neals house",
-        32,
+        32_000_000,
+        23,
         01.1796,
         true,
-        12,
         29,
-        100);
+        100, 100);
         //add a new studentFlat property
 StudentFlat newStudentFlat= new abstractBuilding.StudentFlat("Aston University",
-        12,
-        12.2009,
+        9_000,
         10,
-        10 ,
-        false);
+        12.2009,
+        1110 ,
+        7, true);
     // New Mansion
         Mansion belaAirMansion= new abstractBuilding.Mansion("Uncle Phill's House",
+                8_000_000,
                 8,
-                01.995,
+                01.1995,
                 false,
-                1,
                 2,
-                1);
+                1, 10);
 
         townEnclosure.addProperty(newMansion);
         townEnclosure.addProperty(newStudentFlat);

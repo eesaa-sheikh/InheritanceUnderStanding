@@ -61,7 +61,7 @@ public class StudentFlatTest {
     //is the Aparment Cleaned after the semester
     @Test
     public void isApartmentCleaned() {
-        boolean expected = false;
+        boolean expected = true;
 
         boolean actual = studentFlat.isProperlyCleanedAfterSemester();
 
@@ -78,4 +78,9 @@ public class StudentFlatTest {
         assertEquals(expected, actual);
 
     }
-}
+    //tesing to see if my inflation mehthod works
+    @Test
+    public void testingStudentInflation() {
+
+        System.out.println("percentage increse is " + studentFlat.inflationCost() + " % per month");
+    }}

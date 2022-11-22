@@ -47,7 +47,7 @@ public class MansionTest {
 
     @Test
     public void numberOfRooms(){
-        int expected = 82;
+        int expected = 12;
         int actual = mansion.getNumberOfRooms();
 
         assertEquals(expected,actual);
@@ -92,6 +92,25 @@ public class MansionTest {
         String actual = mansion.makeHouseHoldOccuption();
         //Assert
         assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void mansionSizeimplementation() {
+        // Arrange
+        int expected = 10;
+        // Acting
+        //this is an Overload
+        int actual = mansion.mansionSize(10);
+        //Assert
+        assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void testingInflation() {
+
+        System.out.println("percentage increse is " + mansion.inflationCost() + " % for full valuation of the property");
 
 
 

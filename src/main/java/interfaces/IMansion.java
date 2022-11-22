@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface IMansion {
-    String mansionSize (int squareFeet);
+    Integer mansionSize (int squareFeet);
 }
