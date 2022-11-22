@@ -37,6 +37,7 @@ public class TownEnclosure {
         return this.abstractBuildings.size();
 
     }
+
     public void addProperty(AbstractBuilding abstractBuilding){
         this.abstractBuildings.add(abstractBuilding);
     }

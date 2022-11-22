@@ -31,10 +31,10 @@ public class TownEnclosureTest {
 Mansion newMansion= new AbstractBuilding.Mansion("Shaquille O' Neals house", 32, 01.1796,true,12,29, 100);  //This needs to be fixed
 StudentFlat newStudentFlat= new AbstractBuilding.StudentFlat("Aston University", 12, 12.2009, 10, 10 ,false);
 
-TownEnclosure.addProperty(newMansion);
-TownEnclosure.addProperty(newStudentFlat);
+townEnclosure.addProperty(newMansion);
+townEnclosure.addProperty(newStudentFlat);
     int expected = 2;
-    int actual = TownEnclosure.countProperty();
+    int actual = townEnclosure.countProperty();
 
     assertEquals(expected, actual);
 
