@@ -1,8 +1,4 @@
-package AbstractBuilding;
-
-import java.nio.DoubleBuffer;
-import java.time.LocalDate;
-import java.util.Date;
+package abstractBuilding;
 
 public abstract class AbstractBuilding {
 

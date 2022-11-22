@@ -1,7 +1,4 @@
-package AbstractBuilding;
-
-import java.time.LocalDate;
-import java.util.Date;
+package abstractBuilding;
 
 public class Mansion extends AbstractBuilding {
 

@@ -1,5 +1,5 @@
-package AbstractBuildingTest;
-import AbstractBuilding.Mansion;
+package abstractBuildingTest;
+import abstractBuilding.Mansion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

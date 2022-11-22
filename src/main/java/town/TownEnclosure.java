@@ -1,6 +1,6 @@
-package Town;
+package town;
 
-import AbstractBuilding.AbstractBuilding;
+import abstractBuilding.AbstractBuilding;
 
 import java.util.ArrayList;
 public class TownEnclosure {

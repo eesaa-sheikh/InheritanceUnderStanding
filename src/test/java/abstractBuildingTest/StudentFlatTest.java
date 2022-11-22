@@ -1,5 +1,5 @@
-package AbstractBuildingTest;
-import AbstractBuilding.StudentFlat;
+package abstractBuildingTest;
+import abstractBuilding.StudentFlat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,16 +13,18 @@ public class StudentFlatTest {
     public void setUp() {
 
 
-        studentFlat = new AbstractBuilding.StudentFlat("Aston University",
+        studentFlat = new abstractBuilding.StudentFlat("Aston University",
                 20, 05.2007, 169,
-                10, false) {
+                10, false);
+
+    }
 
 
             @Test
 
             //Testing Name
 
-            public void nameProperty() {
+            public void testingPropertyNameValue() {
                 // Arrange
                 String expected = "Aston University";
                 // Acting
@@ -55,7 +57,7 @@ public class StudentFlatTest {
 
                 assertEquals(expected, actual);
             }
-            //Does Mansion have library
+            //is the Aparment Cleaned after the semester
             @Test
             public void isApartmentCleaned(){
                 boolean expected = false;
@@ -65,7 +67,4 @@ public class StudentFlatTest {
                 assertEquals(expected,actual);
             }
 
-            ;
-        };
-    }
-}
+        }

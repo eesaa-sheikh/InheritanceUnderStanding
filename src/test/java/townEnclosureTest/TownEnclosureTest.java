@@ -1,7 +1,7 @@
-package TownEnclosureTest;
-import AbstractBuilding.Mansion;
-import AbstractBuilding.StudentFlat;
-import Town.TownEnclosure;
+package townEnclosureTest;
+import abstractBuilding.Mansion;
+import abstractBuilding.StudentFlat;
+import town.TownEnclosure;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -28,7 +28,7 @@ public class TownEnclosureTest {
 
     //Testing to see if both subClasses
     public void canAddPropertyMansionandStudentFlat() {
-Mansion newMansion= new AbstractBuilding.Mansion("Shaquille O' Neals house",
+Mansion newMansion= new abstractBuilding.Mansion("Shaquille O' Neals house",
         32,
         01.1796,
         true,
@@ -36,14 +36,14 @@ Mansion newMansion= new AbstractBuilding.Mansion("Shaquille O' Neals house",
         29,
         100);
         //add a new studentFlat property
-StudentFlat newStudentFlat= new AbstractBuilding.StudentFlat("Aston University",
+StudentFlat newStudentFlat= new abstractBuilding.StudentFlat("Aston University",
         12,
         12.2009,
         10,
         10 ,
         false);
     // New Mansion
-        Mansion belaAirMansion= new AbstractBuilding.Mansion("Uncle Phill's House",
+        Mansion belaAirMansion= new abstractBuilding.Mansion("Uncle Phill's House",
                 8,
                 01.995,
                 false,

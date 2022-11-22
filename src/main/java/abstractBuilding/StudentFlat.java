@@ -1,7 +1,4 @@
-package AbstractBuilding;
-
-import java.time.LocalDate;
-import java.util.Date;
+package abstractBuilding;
 
 public class StudentFlat extends AbstractBuilding {
 
@@ -10,7 +7,7 @@ public class StudentFlat extends AbstractBuilding {
     private final boolean properlyCleanedAfterSemester;
 
     public StudentFlat(
-            ////////// Constructor for the last case
+            //////////////////////////////////////////////////// Constructor from the parent class
             String nameOfProperty,
             int numberOfRooms,
             Double dateOfConstruction,
